@@ -1,0 +1,25 @@
+.container {
+    width: 100%;
+    height: 100vh;
+}
+
+.head {
+    text-align: center;
+    padding-top: 1%;
+    font-size: 3rem;
+}
+
+.construction {
+    display: block;
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+hr {
+    width: 40%;
+}
+
+.subhead {
+    text-align: center;
+    font-size: 2rem;
+}
