@@ -1,25 +1,80 @@
-.container {
-    width: 100%;
-    height: 100vh;
+:root {
+    --mainBlue: #2a2a72;
+    --lightBlue: #009ffd;
+    --mainWhite: #f3f3f3;
+    --brandGrey: rgb(70, 70, 70);
+    --mainDark: #232528;
+    --mainYellow: #ffa400;
 }
 
-.head {
-    text-align: center;
-    padding-top: 1%;
-    font-size: 3rem;
+a {
+    text-decoration: none !important;
 }
 
-.construction {
+.anieka {
+    border-radius: 50%;
+}
+
+body {
+    font-family: 'Playfair Display', serif !important;
+    background: var(--mainWhite) !important
+}
+
+.brand-text {
+    font-family: 'Niconne', cursive;
+    color: var(--brandGrey);
+    font-size: 2rem!important;
+    font-weight: bold!important;
+}
+
+.buttons {
+    float: right;
+}
+
+.create {
+    padding-top: 0 !important;
+    padding-bottom: 2rem !important;
+}
+
+ul {
+    list-style-type: none !important;
+    overflow: hidden !important;
+}
+
+.login {
+    padding-left: 2%;
+}
+
+.signup {
+    padding-left: 2%;
+}
+
+li {
+    float: left !important;
+}
+
+li a {
     display: block;
-    max-width: 50%;
-    margin: 0 auto;
 }
 
-hr {
-    width: 40%;
+.links {
+    color: rgb(0, 72, 114);
 }
 
-.subhead {
-    text-align: center;
-    font-size: 2rem;
+.py-24 {
+    padding-bottom: 0 !important;
+}
+
+.section-bg-dark {
+    background-color: lightgrey;
+}
+
+.site-logo {
+    width: 10%!important;
+    margin: 0!important;
+}
+
+.title-text {
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
 }
