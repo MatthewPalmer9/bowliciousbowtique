@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.png';
 import anieka from './anieka.jpg';
 
 export default class Home extends Component {
@@ -13,7 +12,7 @@ export default class Home extends Component {
                         <div className="flex flex-col sm:flex-row mt-10">
                             <div className="sm:w-1/3 text-center sm:pr-8 sm:py-8">
                             <div className="w-20 h-20 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400">
-                                <img className="anieka" src={anieka}></img>
+                                <img className="anieka" src={anieka} alt="ceo"></img>
                             </div>
                             <div className="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
                                 <span className="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6"></span>

@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import logo from './logo.png';
 
 
 export default class Navbar extends Component {
@@ -11,7 +9,7 @@ export default class Navbar extends Component {
     render() {
         return (
             <>
-                <nav className="pic-watermark navbar navbar-expand-lg navbar-light bg-light">
+                <nav className="pic-watermark navbar navbar-expand-lg navbar-light bg-light fixed-top">
                     <a className="brand-text navbar-brand" href="/">Bowlicious Bowtique</a>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
@@ -25,7 +23,7 @@ export default class Navbar extends Component {
                                 <a className="nav-link" href="/products">Products</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="/deals" tabindex="-1" aria-disabled="true">Deals</a>
+                                <a className="nav-link" href="/deals" tabIndex="-1" aria-disabled="true">Deals</a>
                             </li>
                         </ul>
                         <ul>
