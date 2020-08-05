@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import anieka from './anieka.jpg';
 
-export default class Home extends Component {
+export default class Home extends PureComponent {
     render() {
         return (
             <div>
@@ -28,37 +28,37 @@ export default class Home extends Component {
                     </div>
                 </section>
 
-                <section class="section-bg-dark text-gray-700 body-font">
-                <div class="container px-5 py-24 mx-auto">
-                    <h1 class="sm:text-3xl text-2xl font-medium title-font text-center text-gray-900 mb-20">Why Create an Account?
+                <section className="section-bg-dark text-gray-700 body-font">
+                <div className="container px-5 py-24 mx-auto">
+                    <h1 className="sm:text-3xl text-2xl font-medium title-font text-center text-gray-900 mb-20">Why Create an Account?
                     </h1>
-                    <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
-                    <div class="p-4 md:w-1/3 md:mb-0 mb-6 flex">
-                        <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4 flex-shrink-0">
-                        <i class="fas fa-piggy-bank fa-lg"></i>
+                    <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
+                    <div className="p-4 md:w-1/3 md:mb-0 mb-6 flex">
+                        <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4 flex-shrink-0">
+                        <i className="fas fa-piggy-bank fa-lg"></i>
                         </div>
-                        <div class="flex-grow pl-6">
-                        <h2 class="text-gray-900 text-lg title-font font-medium mb-2">Rewards</h2>
-                        <p class="leading-relaxed text-base">Everyone loves savings! At Bowlicious Bowtique, every order on the website adds points on your account towards a free bow reward! Don't worry, we cover all fees on free bow orders.</p>
+                        <div className="flex-grow pl-6">
+                        <h2 className="text-gray-900 text-lg title-font font-medium mb-2">Rewards</h2>
+                        <p className="leading-relaxed text-base">Everyone loves savings! At Bowlicious Bowtique, every order on the website adds points on your account towards a free bow reward! Don't worry, we cover all fees on free bow orders.</p>
                         </div>
                     </div>
-                    <div class="p-4 md:w-1/3 md:mb-0 mb-6 flex">
-                        <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4 flex-shrink-0">
-                        <i class="fas fa-tags"></i>
+                    <div className="p-4 md:w-1/3 md:mb-0 mb-6 flex">
+                        <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4 flex-shrink-0">
+                        <i className="fas fa-tags"></i>
                         </div>
-                        <div class="flex-grow pl-6">
-                        <h2 class="text-gray-900 text-lg title-font font-medium mb-2">Exclusive Deals</h2>
-                        <p class="leading-relaxed text-base">Occasionally, you'll find special deals that are both seasonal and randomly released! Check out the <a className="links" href="/deals"><strong>deals</strong></a> page often!</p>
+                        <div className="flex-grow pl-6">
+                        <h2 className="text-gray-900 text-lg title-font font-medium mb-2">Exclusive Deals</h2>
+                        <p className="leading-relaxed text-base">Occasionally, you'll find special deals that are both seasonal and randomly released! Check out the <a className="links" href="/deals"><strong>deals</strong></a> page often!</p>
                         
                         </div>
                     </div>
-                    <div class="p-4 md:w-1/3 md:mb-0 mb-6 flex">
-                        <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4 flex-shrink-0">
-                            <i class="fas fa-history"></i>
+                    <div className="p-4 md:w-1/3 md:mb-0 mb-6 flex">
+                        <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4 flex-shrink-0">
+                            <i className="fas fa-history"></i>
                         </div>
-                        <div class="flex-grow pl-6">
-                            <h2 class="text-gray-900 text-lg title-font font-medium mb-2">Order History</h2>
-                            <p class="leading-relaxed text-base">We take care of providing an order history under your account so that you can keep track of all your orders from one place!</p>
+                        <div className="flex-grow pl-6">
+                            <h2 className="text-gray-900 text-lg title-font font-medium mb-2">Order History</h2>
+                            <p className="leading-relaxed text-base">We take care of providing an order history under your account so that you can keep track of all your orders from one place!</p>
                         </div>
                     </div>
                     </div>

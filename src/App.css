@@ -31,9 +31,19 @@ body {
     float: right;
 }
 
+.btn-outline-warning {
+    color: black!important;
+}
+
 .create {
     padding-top: 0 !important;
     padding-bottom: 2rem !important;
+}
+
+.cart-btn {
+    border: 1px solid orange;
+    border-radius: 5px;
+    padding: 1%;
 }
 
 ul {
