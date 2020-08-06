@@ -35,12 +35,17 @@ body {
 .btn-outline-success {
     color: black !important;
     border: 1px solid pink !important;
+    border-color: pink !important;
 }
 
 .btn-outline-success:hover {
     color: white !important;
     background-color: pink !important;
     border: 2px inset solid pink !important;
+}
+
+.btn-outline-success:focus {
+    box-shadow: none !important;
 }
 
 .btn-outline-warning {
