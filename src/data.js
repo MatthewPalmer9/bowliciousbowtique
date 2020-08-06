@@ -30,7 +30,7 @@ export const storeProducts = [
   },
   {
     id: 3,
-    title: "Cute Stitch (Leo & Stitch)",
+    title: "Cute Stitch (Lilo & Stitch)",
     img: "img/product-3.jpg",
     price: 8,
     category: "disney",
