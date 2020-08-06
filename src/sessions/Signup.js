@@ -7,7 +7,7 @@ export default class Signup extends Component {
                 <form className="form-signin">
                     <div className="text-center mb-4">
                         <h1 className="h3 mb-3 font-weight-normal">Sign Up</h1>
-                        <span className="inline-block h-1 w-50 rounded pink mt-8 mb-6"></span>
+                        <span className="form inline-block h-1 w-50 rounded pink mt-8 mb-6"></span>
                     </div>
 
                     <div className="form-label-group">

@@ -105,6 +105,10 @@ li a {
     background-color: lightgrey;
 }
 
+span.form {
+    margin-top: 0!important;
+}
+
 .site-logo {
     width: 10%!important;
     margin: 0!important;
