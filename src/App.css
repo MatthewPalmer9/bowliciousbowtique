@@ -17,6 +17,7 @@ a {
 
 body {
     font-family: 'Playfair Display', serif !important;
+    height: 100% !important;
     background: var(--mainWhite) !important
 }
 
@@ -29,6 +30,17 @@ body {
 
 .buttons {
     float: right;
+}
+
+.btn-outline-success {
+    color: black !important;
+    border: 1px solid pink !important;
+}
+
+.btn-outline-success:hover {
+    color: white !important;
+    background-color: pink !important;
+    border: 2px inset solid pink !important;
 }
 
 .btn-outline-warning {
@@ -44,6 +56,24 @@ body {
     border: 1px solid orange;
     border-radius: 5px;
     padding: 1%;
+}
+
+.pink {
+    background-color: pink !important;
+}
+
+.pink-btn {
+    background-color: pink !important;
+    border: 1px solid pink !important;
+}
+
+.pink-btn:hover {
+    background-color: rgb(226, 166, 176) !important;
+    border: 2px inset solid pink !important;
+}
+
+.pink-icon {
+    color: pink;
 }
 
 ul {
@@ -71,6 +101,10 @@ li a {
     color: rgb(0, 72, 114);
 }
 
+.opacity-90 {
+    opacity: 90%;
+}
+
 .section-bg-dark {
     background-color: lightgrey;
 }
@@ -78,6 +112,10 @@ li a {
 .site-logo {
     width: 10%!important;
     margin: 0!important;
+}
+
+.sticky {
+    position: fixed;
 }
 
 .title-text {

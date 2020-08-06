@@ -9,7 +9,7 @@ export default class Navbar extends Component {
     render() {
         return (
             <>
-                <nav className="pic-watermark navbar navbar-expand-lg navbar-light bg-light fixed-top">
+                <nav className="opacity-90 navbar navbar-expand-lg navbar-light bg-light fixed-top">
                     <a className="brand-text navbar-brand" href="/">Bowlicious Bowtique</a>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
@@ -29,7 +29,7 @@ export default class Navbar extends Component {
                         <ul>
                             <form className="form-inline my-2 my-lg-0">
                                 <a href="/login" onClick={this.handleClick}className="btn btn-outline-success my-2 my-sm-0" type="submit">Log in</a>
-                                <a href="/signup" onClick={this.handleClick} className="btn btn-outline-primary my-2 my-sm-0" type="submit">Sign Up</a>
+                                <a href="/signup" onClick={this.handleClick} className="btn btn-outline-secondary my-2 my-sm-0" type="submit">Sign Up</a>
                             </form>
                         </ul>
                     </div>

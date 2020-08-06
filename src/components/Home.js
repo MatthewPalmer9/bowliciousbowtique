@@ -15,7 +15,7 @@ export default class Home extends PureComponent {
                                 <img className="anieka" src={anieka} alt="ceo"></img>
                             </div>
                             <div className="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
-                                <span className="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6"></span>
+                                <span className="inline-block h-1 w-10 rounded pink mt-8 mb-6"></span>
                                 <h2 className="text-gray-900 font-medium title-font tracking-wider text-sm">ANIEKA SCATES</h2>
                                 <p className="text-gray-500">CEO</p>
                             </div>
@@ -35,7 +35,7 @@ export default class Home extends PureComponent {
                     <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
                     <div className="p-4 md:w-1/3 md:mb-0 mb-6 flex">
                         <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4 flex-shrink-0">
-                        <i className="fas fa-piggy-bank fa-lg"></i>
+                        <i className="pink-icon fas fa-piggy-bank fa-lg"></i>
                         </div>
                         <div className="flex-grow pl-6">
                         <h2 className="text-gray-900 text-lg title-font font-medium mb-2">Rewards</h2>
@@ -44,7 +44,7 @@ export default class Home extends PureComponent {
                     </div>
                     <div className="p-4 md:w-1/3 md:mb-0 mb-6 flex">
                         <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4 flex-shrink-0">
-                        <i className="fas fa-tags"></i>
+                        <i className="pink-icon fas fa-tags"></i>
                         </div>
                         <div className="flex-grow pl-6">
                         <h2 className="text-gray-900 text-lg title-font font-medium mb-2">Exclusive Deals</h2>
@@ -54,7 +54,7 @@ export default class Home extends PureComponent {
                     </div>
                     <div className="p-4 md:w-1/3 md:mb-0 mb-6 flex">
                         <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4 flex-shrink-0">
-                            <i className="fas fa-history"></i>
+                            <i className="pink-icon fas fa-history"></i>
                         </div>
                         <div className="flex-grow pl-6">
                             <h2 className="text-gray-900 text-lg title-font font-medium mb-2">Order History</h2>

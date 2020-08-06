@@ -22,9 +22,18 @@ export default class Product extends Component {
 
                         className="btn btn-outline-warning" 
                         disabled={inCart ? true : false}
-                        onClick={() => {console.log('added to the cart')}}
+                        onClick={() => console.log('added to cart')}
 
-                    ><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                        >{inCart? (
+                            <p className="text-capitalize mb-0" disabled>
+                                {" "}
+                                In Cart
+                            </p>
+                        ) : (
+                            <p>
+                                <i className="fas fa-cart-plus"></i> Add to Cart
+                            </p>
+                        )}</button>
                     </div>
                 </div>
             </>
