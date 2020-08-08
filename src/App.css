@@ -38,6 +38,10 @@ body {
     border-color: pink !important;
 }
 
+.push-right {
+    margin-left: 20px !important;
+}
+
 .btn-outline-success:hover {
     color: white !important;
     background-color: pink !important;

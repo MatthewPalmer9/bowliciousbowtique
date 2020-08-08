@@ -1,20 +1,23 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { updateDetails } from '../actions/updateDetails';
+import { connect } from 'react-redux';
 
 
-export default class Product extends Component {
+export class Product extends Component {
+    
     render() {
         const { id, title, img, price, category, inCart } = this.props.product;
-
-        return (
+        return(
+            
             <>
-                <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
-                    <Link to="/details" className="block relative h-48 rounded overflow-hidden">
+                <div onClick={this.handleSetDetails} className="lg:w-1/4 md:w-1/2 p-4 w-full">
+                    <div className="block relative h-48 rounded overflow-hidden">
                         <img alt="bow" className="object-cover object-center w-full h-full block" src={img}></img>
-                    </Link>
+                    </div>
+                    
 
                     <div className="mt-4">
-                        <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">{category.toUpperCase()}</h3>
+                        <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">{category}</h3>
                         <h2 className="text-gray-900 title-font text-lg font-medium">{title}</h2>
                         <p className="mt-1">{`$` + price + `.00`}</p>
                         
@@ -22,7 +25,7 @@ export default class Product extends Component {
 
                         className="btn btn-outline-warning" 
                         disabled={inCart ? true : false}
-                        onClick={() => console.log('added to cart')}
+                        // onClick={}
 
                         >{inCart? (
                             <p className="text-capitalize mb-0" disabled>
@@ -40,3 +43,15 @@ export default class Product extends Component {
         )
     }
 }
+
+const mapStateToProps = ( { details } ) => {
+    return {
+        details
+    }
+}
+
+const mapDispatchToProps = (dispatch) => ({
+    updateDetails: (details) => dispatch(updateDetails(details))
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(Product)

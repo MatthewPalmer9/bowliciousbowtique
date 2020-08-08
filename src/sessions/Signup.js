@@ -11,18 +11,18 @@ export default class Signup extends Component {
                     </div>
 
                     <div className="form-label-group">
-                        <input type="email" id="inputEmail" className="form-control" placeholder="Username" required autofocus></input>
-                        <label for="inputEmail">Username</label>
+                        <input type="input" id="inputEmail" className="form-control" placeholder="Username" required autoFocus></input>
+                        <label htmlFor="username">Username</label>
                     </div>
 
                     <div className="form-label-group">
-                        <input type="email" id="inputEmail" className="form-control" placeholder="Email address" required autofocus></input>
-                        <label for="inputEmail">Email address</label>
+                        <input type="email" id="inputEmail" className="form-control" placeholder="Email address" required></input>
+                        <label htmlFor="inputEmail">Email address</label>
                     </div>
 
                     <div className="form-label-group">
                         <input type="password" id="inputPassword" className="form-control" placeholder="Password" required></input>
-                        <label for="inputPassword">Password</label>
+                        <label htmlFor="inputPassword">Password</label>
                     </div>
 
                     

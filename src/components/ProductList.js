@@ -1,14 +1,12 @@
 import React, { Component } from 'react';
 import Product from './Product';
-import {storeProducts} from '../data.js'
+import { storeProducts } from '../data.js';
 
 export default class ProductList extends Component {
 
-
-    state = {
+    state = { 
         products: storeProducts
     }
-
 
     render() {
         return (
@@ -18,7 +16,7 @@ export default class ProductList extends Component {
                         <div className="flex flex-wrap -m-4">
                         
                         {this.state.products.map((product, index) => {
-                            return <Product key={index} product={product}/>
+                            return <Product key={index} product={product} />
                         })}
 
                         </div>
@@ -28,4 +26,4 @@ export default class ProductList extends Component {
             </div>
         )
     }
-}
+};

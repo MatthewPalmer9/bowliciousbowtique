@@ -1,12 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 
-export default class Navbar extends Component {
-
-    handleClick = e => {
-    }
-
-    render() {
+const Navbar = () => {
         return (
             <>
                 <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
@@ -28,13 +23,14 @@ export default class Navbar extends Component {
                         </ul>
                         <ul>
                             <form className="form-inline my-2 my-lg-0">
-                                <a href="/login" onClick={this.handleClick}className="btn btn-outline-success my-2 my-sm-0" type="submit">Log in</a>
-                                <a href="/signup" onClick={this.handleClick} className="btn btn-outline-secondary my-2 my-sm-0" type="submit">Sign Up</a>
+                                <a href="/login" className="btn btn-outline-success my-2 my-sm-0" type="submit">Log in</a>
+                                <a href="/signup" className="btn btn-outline-secondary my-2 my-sm-0" type="submit">Sign Up</a>
                             </form>
                         </ul>
                     </div>
                 </nav>
             </>
         )
-    }
 }
+
+export default Navbar

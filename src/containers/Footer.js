@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
-import logo from './logo.png';
+import logo from '../components/logo.png';
 
-export default class Footer extends Component {
-    render() {
+const Footer = () => {
         return (
             <>
                 <footer className="sticky text-gray-700 body-font">
@@ -43,4 +42,5 @@ export default class Footer extends Component {
             </>
         )
     }
-}
+
+export default Footer
