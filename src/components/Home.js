@@ -1,8 +1,7 @@
-import React, { PureComponent } from 'react';
+import React from 'react';
 import anieka from './anieka.jpg';
 
-export default class Home extends PureComponent {
-    render() {
+const Home = () => {
         return (
             <div>
                 <section className="text-gray-700 body-font">
@@ -67,4 +66,5 @@ export default class Home extends PureComponent {
             </div>
         )
     }
-}
+
+export default Home

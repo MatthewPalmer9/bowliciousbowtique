@@ -1,11 +1,12 @@
-import React, { Component } from 'react'
+import React from 'react';
 
-export default class Deals extends Component {
-    render() {
+const Deals = () => {
         return (
-            <div>
-                <h3>Hello from Deals</h3>
-            </div>
-        )
-    }
+        <div>
+            <h3>Hello from Deals</h3>
+        </div>
+    )
 }
+
+export default Deals
+

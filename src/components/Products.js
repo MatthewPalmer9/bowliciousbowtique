@@ -1,16 +1,11 @@
-import React, { Component } from 'react';
-import { updateDetails } from '../actions/updateDetails';
+import React from 'react';
 import { connect } from 'react-redux';
 
-
-export class Product extends Component {
-    
-    render() {
-        const { id, title, img, price, category, inCart } = this.props.product;
+export function Products (products) { 
+        console.log(products)
         return(
-            
             <>
-                <div onClick={this.handleSetDetails} className="lg:w-1/4 md:w-1/2 p-4 w-full">
+                {/* <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
                     <div className="block relative h-48 rounded overflow-hidden">
                         <img alt="bow" className="object-cover object-center w-full h-full block" src={img}></img>
                     </div>
@@ -38,20 +33,12 @@ export class Product extends Component {
                             </p>
                         )}</button>
                     </div>
-                </div>
+                </div> */}
             </>
         )
     }
-}
 
-const mapStateToProps = ( { details } ) => {
-    return {
-        details
-    }
-}
+    export default connect()(Products)
+    
 
-const mapDispatchToProps = (dispatch) => ({
-    updateDetails: (details) => dispatch(updateDetails(details))
-})
 
-export default connect(mapStateToProps, mapDispatchToProps)(Product)
