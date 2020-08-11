@@ -1,14 +1,18 @@
-export default function manageProducts( state={ products: [], requesting: false }, action) {
+export default function manageProducts( state={ products: [], comments: [], requesting: false }, action) {
     switch (action.type) {
-        
-        case 'FETCH_PRODUCTS':
-            return {
-                products: action.payload
-            }
         case 'RENDER_PRODUCTS':
             return {
-                ...state, products: action.products,
+                ...state, products: action.payload,
                 requesting: false
+            }
+        case 'FETCH_COMMENTS':
+            return {
+                ...state, comments: action.payload,
+                requesting: false
+            }
+        case 'ADD_COMMENT':
+            return {
+                ...state, comments: [...state.comments, action.payload]
             }
         default:
             return state

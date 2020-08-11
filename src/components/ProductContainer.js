@@ -17,7 +17,7 @@ export class ProductContainer extends Component {
                     <div className="container px-5 py-24 mx-auto">
                         <div className="flex flex-wrap -m-4">
                             
-                            <Products products={this.props.products}/>
+                            <Products state={this.props.products}/>
 
 
                         </div>

@@ -18,7 +18,7 @@ const Navbar = () => {
                                 <a className="nav-link" href="/products">Products</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="/deals" tabIndex="-1" aria-disabled="true">Deals</a>
+                                <a className="nav-link" href="/testimonials" tabIndex="-1" aria-disabled="true">Testimonials</a>
                             </li>
                         </ul>
                         <ul>

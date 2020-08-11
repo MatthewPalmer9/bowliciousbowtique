@@ -1,44 +1,25 @@
 import React from 'react';
+import Product from './Product';
 import { connect } from 'react-redux';
 
-export function Products (products) { 
-        console.log(products)
+export function Products(state){ 
+        const products = state.products
         return(
             <>
-                {/* <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
-                    <div className="block relative h-48 rounded overflow-hidden">
-                        <img alt="bow" className="object-cover object-center w-full h-full block" src={img}></img>
-                    </div>
-                    
-
-                    <div className="mt-4">
-                        <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">{category}</h3>
-                        <h2 className="text-gray-900 title-font text-lg font-medium">{title}</h2>
-                        <p className="mt-1">{`$` + price + `.00`}</p>
-                        
-                        <button 
-
-                        className="btn btn-outline-warning" 
-                        disabled={inCart ? true : false}
-                        // onClick={}
-
-                        >{inCart? (
-                            <p className="text-capitalize mb-0" disabled>
-                                {" "}
-                                In Cart
-                            </p>
-                        ) : (
-                            <p>
-                                <i className="fas fa-cart-plus"></i> Add to Cart
-                            </p>
-                        )}</button>
-                    </div>
-                </div> */}
+                {products.map((product, index) => {
+                    return <Product key={index} product={product}/>
+                })}
             </>
         )
     }
 
-    export default connect()(Products)
+    const mapStateToProps = ({ products }) => {
+        return {
+            products
+        }
+    }
+
+    export default connect(mapStateToProps)(Products)
     
 
 
