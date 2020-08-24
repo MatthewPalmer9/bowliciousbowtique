@@ -1,6 +1,6 @@
 ## App Information
 
-This is a private repo for the official front end for the Bowlicious Bowtique website. 
+This is a repo for the official front end for the Bowlicious Bowtique website. 
 Maintained by MRP Technologies.
 
 If you have any questions, please contact the owner at: `matthewpalmer9@outlook.com`
