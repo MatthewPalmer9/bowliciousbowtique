@@ -16,20 +16,10 @@ export default class CodeTest extends Component {
         // })
         console.log('a');
 
-        fetch('http://localhost:3000/productsjklfdsjlfjds')
-            .then(resp => {
-                if(resp.status !== 200) {
-                    throw new Error(resp.statusText);
-                }
-                console.log('b');
-                return resp.json();
-            })
+        fetch('http://localhost:3000/products')
+            .then(resp => resp.json())
             .then(data => console.log('c', data))
             .catch(errors => console.log('d', errors))
-
-        console.log('e');
-
-
     }
 
     render() {

@@ -11,7 +11,6 @@ import Footer from './containers/Footer';
 import Default from './components/Default';
 import Login from './sessions/Login';
 import Signup from './sessions/Signup';
-import CodeTest from './components/CodeTest';
 
 
 export default class App extends Component {
@@ -23,7 +22,6 @@ export default class App extends Component {
           <Navbar />
             <Switch>
               <Route exact path="/" component={Home}/>
-              <Route exact path="/test" component={CodeTest} />
               <Route exact path="/testimonials" component={TestimonialsContainer}/>
               <Route exact path="/products" component={ProductContainer} />
               <Route exact path="/login" component={Login}/>
