@@ -15,7 +15,7 @@ export class TestimonialComments extends Component {
         })
     }
 
-    handleSubmit = e => {
+    handleSubmit = (e) => {
         e.preventDefault()
         this.props.postComments(this.state)
         this.setState({
@@ -41,7 +41,7 @@ export class TestimonialComments extends Component {
                                     </div>
                                     <div className="p-2 w-full">
                                         <textarea onChange={this.handleChange} name="comment" value={this.state.comment} className="w-full bg-gray-100 rounded border border-gray-400 focus:outline-none h-48 focus:border-indigo-500 text-base px-4 py-2 resize-none block" type="text" placeholder="Comment" required></textarea>
-                                    </div>
+                                    </div>e
                                     <div className="p-2 w-full">
                                         <input type="submit" value="Comment" className="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg" />
                                     </div>

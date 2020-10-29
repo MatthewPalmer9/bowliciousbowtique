@@ -17,22 +17,9 @@ export default class Product extends Component {
                         <h2 className="text-gray-900 title-font text-lg font-medium">{title}</h2>
                         <p className="mt-1">{`$` + price + `.00`}</p>
                         
-                        <button 
-
-                        className="btn btn-outline-warning" 
-                        disabled={inCart ? true : false}
-                        // onClick={}
-
-                        >{inCart? (
-                            <p className="text-capitalize mb-0" disabled>
-                                {" "}
-                                In Cart
-                            </p>
-                        ) : (
-                            <p>
-                                <i className="fas fa-cart-plus"></i> Add to Cart
-                            </p>
-                        )}</button>
+                        <button className="btn btn-outline-warning">
+                            <i className="fas fa-cart-plus"></i> Add to Cart
+                        </button>
                     </div>
                 </div>
             </>

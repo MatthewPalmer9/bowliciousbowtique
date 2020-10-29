@@ -1,6 +1,6 @@
 export function postComments(comment){
     return (dispatch) => {
-        fetch('https://still-refuge-44546.herokuapp.com/comments', {
+        fetch('http://localhost:3000/comments', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
