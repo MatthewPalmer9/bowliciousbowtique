@@ -2,8 +2,13 @@
 Production: https://bowliciousbowtique.vercel.app/
 Staging: https://bowliciousbowtique.vercel.app/
 
+<<<<<<< HEAD
 ## Developers
 [Matthew Palmer](https://github.com/matthewpalmer9)
+=======
+This is a repo for the official front end for the Bowlicious Bowtique website. 
+Maintained by MRP Technologies.
+>>>>>>> 15d9a6e78f5d04adec2ec1bc98fbf6469b875db2
 
 ## About
 This project is a faux E-commerce website that turned out to be my final project at Flatiron School. The purposes was to learn more about how React and the Redux library work together.
