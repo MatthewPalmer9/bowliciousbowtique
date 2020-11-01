@@ -1,3 +1,4 @@
+import axios from 'axios';
 import React, { Component } from 'react';
 
 export default class Registration extends Component {
@@ -20,7 +21,18 @@ export default class Registration extends Component {
     }
 
     handleSubmit(event) {
-        console.log("success");
+        axios.post("http://localhost:3000/registrations", {
+            user: {
+                email: this.state.email,
+                password: this.state.password
+            }
+        }, 
+        { withCredentials: true }
+        ).then(resp => {
+            console.log("registration resp", resp);
+        }).catch(error => {
+            console.log("registration error", error)
+        });
         event.preventDefault();
     }
 
