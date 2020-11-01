@@ -13,6 +13,9 @@ import Login from './sessions/Login';
 import Signup from './sessions/Signup';
 import Test from './components/Test.js';
 
+// Testing
+import Dashboard from './components/temp-study/Dashboard.jsx';
+
 
 export default class App extends Component {
 
@@ -23,6 +26,7 @@ export default class App extends Component {
           <Navbar />
             <Switch>
               <Route exact path="/" component={Home}/>
+              <Route exact path="/dashboard" component={Dashboard} />
               <Route exact path="/test" component={Test} />
               <Route exact path="/testimonials" component={TestimonialsContainer}/>
               <Route exact path="/products" component={ProductContainer} />
