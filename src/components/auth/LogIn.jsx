@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Registration from './Registration.jsx';
+import LogInAuth from './LogInAuth';
 
-export default class SignUp extends Component {
+export default class LogIn extends Component {
     constructor(props) {
         super(props);
         this.handleSuccessfulAuth = this.handleSuccessfulAuth.bind(this);
@@ -20,7 +20,7 @@ export default class SignUp extends Component {
                 <br></br>
                 <br></br>
                 <h1>Status: {this.props.loggedInStatus}</h1>
-                <Registration handleSuccessfulAuth={this.handleSuccessfulAuth} />
+                <LogInAuth handleSuccessfulAuth={this.handleSuccessfulAuth} />
             </div>
         )
     }
