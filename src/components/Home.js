@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 import anieka from './anieka.jpg';
 
-const Home = () => {
+export default class Home extends Component {
+
+    render() {
         return (
             <div>
                 <section className="text-gray-700 body-font">
@@ -66,5 +68,4 @@ const Home = () => {
             </div>
         )
     }
-
-export default Home
+}

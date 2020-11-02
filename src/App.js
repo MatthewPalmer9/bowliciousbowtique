@@ -15,9 +15,28 @@ import Test from './components/Test.js';
 
 // Testing
 import Dashboard from './components/temp-study/Dashboard.jsx';
+import SignUp from './components/auth/SignUp';
 
 
 export default class App extends Component {
+
+  constructor() {
+    super();
+
+    this.state = {
+      loggedInStatus: "NOT_LOGGED_IN",
+      user: {}
+    };
+
+    this.handleLogin = this.handleLogin.bind(this);
+  }
+
+  handleLogin = (data) => {
+    this.setState({
+      loggedInStatus: "LOGGED_IN",
+      user: data.user
+    })
+  }
 
   render() {
     return (
@@ -25,8 +44,21 @@ export default class App extends Component {
         <Router>
           <Navbar />
             <Switch>
+              <Route exact path="/signup" render={props => (
+                <SignUp 
+                  {...props} /* <-- we want to NOT manipulate props, but add to them */
+                  handleLogin={this.handleLogin}
+                  loggedInStatus={this.state.loggedInStatus}
+                />
+              )} />
+
+              <Route exact path="/dashboard" render={props => (
+                <Dashboard 
+                  {...props}
+                  state={this.state}
+                />
+              )} />
               <Route exact path="/" component={Home}/>
-              <Route exact path="/dashboard" component={Dashboard} />
               <Route exact path="/test" component={Test} />
               <Route exact path="/testimonials" component={TestimonialsContainer}/>
               <Route exact path="/products" component={ProductContainer} />
