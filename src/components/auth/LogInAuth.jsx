@@ -20,7 +20,7 @@ export default class LogInAuth extends Component {
         })
     }
 
-    handleSubmit(event) {
+    handleSubmit = () => {
         axios.post("http://localhost:3000/sessions", {
             user: {
                 email: this.state.email,
@@ -35,7 +35,6 @@ export default class LogInAuth extends Component {
         }).catch(error => {
             console.log("registration error", error)
         });
-        event.preventDefault();
     }
 
     render() {

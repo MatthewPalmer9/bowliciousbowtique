@@ -7,7 +7,6 @@ import Navbar from './containers/Navbar';
 import Home from './components/Home';
 import ProductContainer from './components/ProductContainer';
 import TestimonialsContainer from './components/TestimonialsContainer.js';
-// import Cart from './components/Cart';
 import Footer from './containers/Footer';
 import Default from './components/Default';
 import Test from './components/Test.js';
@@ -34,12 +33,13 @@ export default class App extends Component {
   checkLoginStatus = () => {
     axios.get("http://localhost:3000/logged_in", {withCredentials: true})
     .then(response => {
-      // console.log(response);
+      console.log(response);
       if(response.data.logged_in && this.state.loggedInStatus === "NOT_LOGGED_IN"){
         this.setState({
           loggedInStatus: "LOGGED_IN",
           user: response.data.user
         })
+        console.log(response.data)
       } else if(!response.data.logged_in & this.state.loggedInStatus === "LOGGED_IN"){
         this.setState({
           loggedInStatus: "NOT_LOGGED_IN",
@@ -51,7 +51,7 @@ export default class App extends Component {
   }
 
   handleLogin = (data) => {
-    console.log("LOGIN CATCH", data);
+    // console.log("LOGIN CATCH", data);
     this.setState({
       loggedInStatus: "LOGGED_IN",
       user: data.user
