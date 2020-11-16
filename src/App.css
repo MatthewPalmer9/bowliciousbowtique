@@ -110,6 +110,13 @@ li a {
     color: rgb(0, 72, 114);
 }
 
+#loader {
+    width: 100vw;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
 .section-bg-dark {
     background-color: lightgrey;
 }

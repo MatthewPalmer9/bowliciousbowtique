@@ -15,10 +15,9 @@ export function Testimonial(state){
                                 </div>
                                 <div className="float-left meta">
                                     <div className="title h5">
-                                        <a href="#">{name} </a>
+                                        <a href="#0">{name} </a>
                                         says
                                     </div>
-                                    {/* <h6 className="text-muted time"></h6> */}
                                 </div>
                             </div> 
                             <div className="post-description"> 

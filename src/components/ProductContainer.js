@@ -16,6 +16,7 @@ export class ProductContainer extends Component {
                 <section className="text-gray-700 body-font">
                     <div className="container px-5 py-24 mx-auto">
                         <div className="flex flex-wrap -m-4">
+                            <div id="loader"></div>
                             
                             <Products state={this.props.products}/>
 

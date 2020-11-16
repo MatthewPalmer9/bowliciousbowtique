@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 export default class Product extends Component {
     render() {
         console.log(this.props.product)
-        const { img, category, price, inCart, title } = this.props.product;
+        const { img, category, price, title } = this.props.product;
         return (
             <>
                 <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
