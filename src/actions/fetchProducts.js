@@ -15,10 +15,10 @@ export function fetchProducts(){
         loader()
         fetch('https://still-refuge-44546.herokuapp.com/products')
         .then(resp => resp.json())
-        .then(unloader())
         .then(products => dispatch({ 
             type: 'RENDER_PRODUCTS', 
             payload: products
         }))
+        .then(unloader())
     }
 }   
