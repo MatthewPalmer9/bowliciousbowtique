@@ -21,7 +21,7 @@ export class ProductContainer extends Component {
                             <Products state={this.props.products}/>
 
 
-                        </div>
+                        </div> 
                     </div>
                 </section>
             </div>

@@ -20,7 +20,8 @@ export default class LogInAuth extends Component {
         })
     }
 
-    handleSubmit = () => {
+    handleSubmit = e => {
+        e.preventDefault();
         axios.post("http://localhost:3000/sessions", {
             user: {
                 email: this.state.email,

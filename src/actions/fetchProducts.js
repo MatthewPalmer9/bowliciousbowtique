@@ -8,7 +8,7 @@ export function fetchProducts(){
         setTimeout(() => {
             const loaderSpan = document.querySelector("#loader");
             loaderSpan.innerHTML = ""
-        }, 1000);
+        }, 0);
     }
 
     return (dispatch) => {
@@ -19,6 +19,6 @@ export function fetchProducts(){
             type: 'RENDER_PRODUCTS', 
             payload: products
         }))
-        .then(unloader())
+        .then(unloader()) 
     }
 }   

@@ -22,10 +22,7 @@ const Navbar = () => {
                             </li>
                         </ul>
                         <ul>
-                            <form className="form-inline my-2 my-lg-0">
-                                <a href="/login" className="btn btn-outline-success my-2 my-sm-0" type="submit">Log in</a>
-                                <a href="/signup" className="btn btn-outline-secondary my-2 my-sm-0" type="submit">Sign Up</a>
-                            </form>
+    
                         </ul>
                     </div>
                 </nav>
