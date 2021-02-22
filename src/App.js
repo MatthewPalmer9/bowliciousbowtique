@@ -11,11 +11,6 @@ import Footer from './containers/Footer';
 import Default from './components/Default';
 import Test from './components/Test.js';
 
-// Testing
-import Dashboard from './components/temp-study/Dashboard.jsx';
-import SignUp from './components/auth/SignUp.jsx';
-import LogIn from './components/auth/LogIn.jsx';
-
 
 export default class App extends Component {
 
